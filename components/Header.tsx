@@ -14,6 +14,10 @@ const menuOptions = [
     text: "About",
     href: "/about",
   },
+  {
+    text: "Plan your trip",
+    href: "/trip-planner",
+  },
 ];
 
 export function Header() {

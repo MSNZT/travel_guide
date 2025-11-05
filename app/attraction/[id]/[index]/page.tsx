@@ -17,12 +17,14 @@ export default function AttractionPage() {
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="text-center px-4">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">404</p>
-          <h1 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3">Направление не найдено</h1>
-          <p className="text-sm text-slate-600 mb-6">Возможно, оно ещё в разработке или вы перешли по старой ссылке.</p>
+          <h1 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3">Destination not found</h1>
+          <p className="text-sm text-slate-600 mb-6">
+            It may still be in development or you followed an outdated link.
+          </p>
           <Link
             href="/tours"
             className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800 transition">
-            Вернуться на главную
+            Back to home
           </Link>
         </div>
       </div>
@@ -31,12 +33,12 @@ export default function AttractionPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Breadcrumbs
           items={[
-            { label: "Направления", href: "/#regions" },
+            { label: "Destinations", href: "/tours" },
             { label: destination.name, href: `/destination/${params.id}` },
-            { label: attraction.title, href: "#" },
+            { label: attraction.title, href: "/" },
           ]}
         />
 
@@ -62,27 +64,27 @@ export default function AttractionPage() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card className="border border-blue-100 p-6 bg-blue-50">
-            <h3 className="font-bold text-lg text-blue-900 mb-4">ℹ️ Важная информация</h3>
+            <h3 className="font-bold text-lg text-blue-900 mb-4">ℹ️ Key information</h3>
             <div className="space-y-4">
               <div>
-                <p className="text-sm text-slate-600">Лучшее время для посещения</p>
+                <p className="text-sm text-slate-600">Best time to visit</p>
                 <p className="font-semibold text-slate-900">{attraction.bestTime}</p>
               </div>
               <div>
-                <p className="text-sm text-slate-600">Информация о билетах</p>
+                <p className="text-sm text-slate-600">Ticket information</p>
                 <p className="font-semibold text-slate-900">{attraction.ticketInfo}</p>
               </div>
             </div>
           </Card>
 
           <Card className="border border-blue-100 p-6">
-            <h3 className="font-bold text-lg text-blue-900 mb-4">📝 Подробное описание</h3>
+            <h3 className="font-bold text-lg text-blue-900 mb-4">📝 Detailed description</h3>
             <p className="text-slate-700 leading-relaxed">{attraction.details}</p>
           </Card>
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">💡 Советы для посещения</h2>
+          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">💡 Visiting tips</h2>
           <Card className="border border-blue-100 p-8 bg-blue-50">
             <ul className="space-y-4">
               {attraction.tips.map((tip: string, idx: number) => (
@@ -98,7 +100,7 @@ export default function AttractionPage() {
         <section className="text-center py-8">
           <Link href={`/destination/${params.id}`}>
             <button className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-3 text-base font-semibold text-white hover:bg-blue-700 transition">
-              ← Вернуться к направлению
+              ← Back to destination
             </button>
           </Link>
         </section>

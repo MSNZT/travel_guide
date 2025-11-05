@@ -17,36 +17,36 @@ export function MainHeader() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <Link href="/" scroll={true} className="hover:text-blue-600 transition">
-            Главная
+            Home
           </Link>
           <Link href="#regions" scroll={true} className="hover:text-blue-600 transition">
-            Направления
+            Destinations
           </Link>
           <Link href="#highlights" scroll={true} className="hover:text-blue-600 transition">
-            Идеи путешествий
+            Travel ideas
           </Link>
         </nav>
 
         <div className="flex flex-col items-center text-center">
           <span className="text-xs tracking-wide font-semibold text-blue-700 uppercase">Russia Uncovered</span>
-          <span className="text-[11px] text-slate-500">Путеводитель по России</span>
+          <span className="text-[11px] text-slate-500">Travel guide to Russia</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <Link href="#tips" className="hover:text-blue-600 transition">
-            Советы
+            Tips
           </Link>
           <Link href="#culture" className="hover:text-blue-600 transition">
-            Планирование
+            Planning
           </Link>
           <Link href="#contacts" className="hover:text-blue-600 transition">
-            Контакты
+            Contacts
           </Link>
         </nav>
 
         <button
           className="md:hidden inline-flex items-center justify-center rounded-md border px-2 py-1 text-xs"
-          aria-label="Открыть меню"
+          aria-label="Open menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((v) => !v)}>
           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,26 +65,26 @@ export function MainHeader() {
         }`}>
         <nav className="px-4 py-3 space-y-2 text-sm">
           <Link href="#home" className="block py-1 hover:text-blue-600" onClick={() => setIsOpen(false)}>
-            Главная
+            Home
           </Link>
           <Link href="#regions" className="block py-1 hover:text-blue-600" onClick={() => setIsOpen(false)}>
-            Направления
+            Destinations
           </Link>
           <Link href="#highlights" className="block py-1 hover:text-blue-600" onClick={() => setIsOpen(false)}>
-            Идеи путешествий
+            Travel ideas
           </Link>
           <Link href="#culture" className="block py-1 hover:text-blue-600" onClick={() => setIsOpen(false)}>
-            Планирование поездки
+            Trip planning
           </Link>
           <Link href="#contacts" className="block py-1 hover:text-blue-600" onClick={() => setIsOpen(false)}>
-            Контакты
+            Contacts
           </Link>
 
           <div className="pt-3 border-t border-slate-200 mt-2">
             <Link
               href="/tours"
               className="inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">
-              Найти экскурсию
+              Find a tour
             </Link>
           </div>
         </nav>

@@ -7,74 +7,74 @@ import { ChevronRight, Clock, Users } from "lucide-react";
 const tours = [
   {
     id: 1,
-    title: "Москва - сердце России",
-    description: "Откройте для себя столицу России с посещением главных достопримечательностей",
+    title: "Moscow – the Heart of Russia",
+    description: "Discover the capital of Russia with visits to its main landmarks",
     image: "/moscow-red-square-kremlin.jpg",
-    duration: "3 дня",
-    difficulty: "Легко",
-    groupSize: "2-8 человек",
+    duration: "3 days",
+    difficulty: "Easy",
+    groupSize: "2–8 people",
     attractions: [
-      "Красная площадь",
-      "Кремль и Соборная площадь",
-      "Храм Христа Спасителя",
-      "Большой театр",
-      "Москва-Сити",
+      "Red Square",
+      "The Kremlin and Cathedral Square",
+      "Cathedral of Christ the Saviour",
+      "Bolshoi Theatre",
+      "Moscow City",
     ],
     region: "moscow",
   },
   {
     id: 2,
-    title: "Санкт-Петербург - венеция Севера",
-    description: "Посетите культурную столицу России и откройте для себя её величие",
+    title: "Saint Petersburg – the Venice of the North",
+    description: "Visit Russia’s cultural capital and discover its grandeur",
     image: "/saint-petersburg-hermitage-palace.jpg",
-    duration: "4 дня",
-    difficulty: "Средне",
-    groupSize: "2-10 человек",
-    attractions: ["Эрмитаж", "Дворцовая площадь", "Петропавловская крепость", "Невский проспект", "Казанский собор"],
+    duration: "4 days",
+    difficulty: "Medium",
+    groupSize: "2–10 people",
+    attractions: ["Hermitage Museum", "Palace Square", "Peter and Paul Fortress", "Nevsky Prospect", "Kazan Cathedral"],
     region: "spb",
   },
   {
     id: 3,
-    title: "Золотое кольцо России",
-    description: "Путешествие по древним русским городам с традиционной архитектурой",
+    title: "The Golden Ring of Russia",
+    description: "A journey through ancient Russian towns with traditional architecture",
     image: "/golden-ring-russia-historic-churches.jpg",
-    duration: "5 дней",
-    difficulty: "Средне",
-    groupSize: "2-12 человек",
-    attractions: ["Ростов Великий", "Суздаль", "Сергиев Посад", "Переславль-Залесский", "Ярославль"],
+    duration: "5 days",
+    difficulty: "Medium",
+    groupSize: "2–12 people",
+    attractions: ["Rostov the Great", "Suzdal", "Sergiev Posad", "Pereslavl-Zalessky", "Yaroslavl"],
     region: "golden-ring",
   },
   {
     id: 4,
-    title: "Озеро Байкал - жемчужина Сибири",
-    description: "Великое путешествие к одному из самых прекрасных озер мира",
+    title: "Lake Baikal – the Pearl of Siberia",
+    description: "An epic journey to one of the most beautiful lakes in the world",
     image: "/lake-baikal-siberia-mountains.jpg",
-    duration: "6 дней",
-    difficulty: "Сложно",
-    groupSize: "2-6 человек",
-    attractions: ["Озеро Байкал", "Остров Ольхон", "Скала Шаманка", "Слюдянка", "Листвянка"],
-    region: "baikal",
+    duration: "6 days",
+    difficulty: "Hard",
+    groupSize: "2–6 people",
+    attractions: ["Lake Baikal", "Olkhon Island", "Shamanka Rock", "Slyudyanka", "Listvyanka"],
+    region: "lake-baikal",
   },
   {
     id: 5,
-    title: "Алтай - край дикой природы",
-    description: "Приключение среди величественных гор и нетронутой природы",
-    image: "/altai-mountains-hiking-nature.jpg",
-    duration: "7 дней",
-    difficulty: "Сложно",
-    groupSize: "2-8 человек",
-    attractions: ["Гора Белуха", "Озеро Ледяное", "Перевалы Алтая", "Долина реки Катуни", "Плато Укок"],
+    title: "Altai – Land of Wilderness",
+    description: "An adventure among majestic mountains and untouched nature",
+    image: "/altai-mountains-hiking-wilderness.jpg",
+    duration: "7 days",
+    difficulty: "Hard",
+    groupSize: "2–8 people",
+    attractions: ["Mount Belukha", "Lake Ledyanoye", "Altai mountain passes", "Katun River Valley", "Ukok Plateau"],
     region: "altai",
   },
   {
     id: 6,
-    title: "Кавказ - край приключений",
-    description: "Исследуйте одни из самых впечатляющих горных пейзажей России",
-    image: "/caucasus-mountains-hiking-landscape.jpg",
-    duration: "5 дней",
-    difficulty: "Сложно",
-    groupSize: "2-10 человек",
-    attractions: ["Эльбрус", "Домбай", "Приэльбрусье", "Кавказский заповедник", "Архыз"],
+    title: "The Caucasus – Land of Adventures",
+    description: "Explore some of the most impressive mountain landscapes in Russia",
+    image: "/caucasus-mountains-elbrus-peaks.jpg",
+    duration: "5 days",
+    difficulty: "Hard",
+    groupSize: "2–10 people",
+    attractions: ["Mount Elbrus", "Dombay", "Elbrus Region", "Caucasian Nature Reserve", "Arkhyz"],
     region: "caucasus",
   },
 ];
@@ -86,16 +86,16 @@ export default function ToursPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="inline-flex items-center rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-slate-500 mb-4">
-              Туры по России
+              Tours in Russia
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-4">
-              Все экскурсии и маршруты
+              All tours and itineraries
             </h1>
 
             <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
-              Подберите маршрут по интересам, формату и длительности — от коротких прогулок до насыщённых путешествий по
-              регионам России.
+              Choose a route by interests, format, and duration — from short walks to rich multi-day trips across
+              Russia’s regions.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function ToursPage() {
                     </div>
 
                     <div className="mb-4">
-                      <p className="text-xs font-semibold text-slate-500 mb-2">Включено:</p>
+                      <p className="text-xs font-semibold text-slate-500 mb-2">Included:</p>
                       <div className="flex flex-wrap gap-1">
                         {tour.attractions.slice(0, 2).map((attr, idx) => (
                           <span key={idx} className="inline-block text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">
@@ -144,7 +144,7 @@ export default function ToursPage() {
                         ))}
                         {tour.attractions.length > 2 && (
                           <span className="inline-block text-xs text-slate-500">
-                            +{tour.attractions.length - 2} ещё
+                            +{tour.attractions.length - 2} more
                           </span>
                         )}
                       </div>
@@ -153,7 +153,7 @@ export default function ToursPage() {
                     <div className="flex items-center justify-between pt-4 border-t border-blue-100">
                       <span className="text-xs font-semibold text-blue-600">{tour.difficulty}</span>
                       <div className="flex items-center gap-1 text-blue-600 group-hover:gap-2 transition-all">
-                        <span className="text-sm font-semibold">Подробнее</span>
+                        <span className="text-sm font-semibold">Details</span>
                         <ChevronRight className="w-4 h-4" />
                       </div>
                     </div>
@@ -167,13 +167,15 @@ export default function ToursPage() {
 
       <section className="bg-blue-50 border-t py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">Не нашли нужный маршрут?</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-4">Didn&apos;t find the right itinerary?</h2>
           <p className="text-slate-600 mb-8">
-            Мы можем помочь вам спланировать кастомный маршрут в зависимости от ваших интересов и возможностей
+            We can help you plan a custom route based on your interests and travel preferences.
           </p>
-          <button className="inline-flex items-center justify-center rounded-full bg-blue-600 px-10 py-4 text-base font-semibold text-white hover:bg-blue-700 transition shadow-lg">
-            Спланировать кастомный маршрут
-          </button>
+          <Link
+            href="/trip-planner"
+            className="inline-flex items-center justify-center rounded-full bg-blue-600 px-10 py-4 text-base font-semibold text-white hover:bg-blue-700 transition shadow-lg">
+            Plan a custom route
+          </Link>
         </div>
       </section>
     </>

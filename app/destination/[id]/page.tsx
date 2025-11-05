@@ -20,12 +20,14 @@ export default function DestinationPage() {
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="text-center px-4">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">404</p>
-          <h1 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3">Направление не найдено</h1>
-          <p className="text-sm text-slate-600 mb-6">Возможно, оно ещё в разработке или вы перешли по старой ссылке.</p>
+          <h1 className="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3">Destination not found</h1>
+          <p className="text-sm text-slate-600 mb-6">
+            It may still be in development or you followed an outdated link.
+          </p>
           <Link
             href="/tours"
             className="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800 transition">
-            Вернуться на главную
+            Back to home
           </Link>
         </div>
       </div>
@@ -34,11 +36,11 @@ export default function DestinationPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-6 sm:mb-8">
           <Breadcrumbs
             items={[
-              { label: "Направления", href: "/tours" },
+              { label: "Destinations", href: "/tours" },
               { label: dest.name, href: `/destination/${params.id}` },
             ]}
           />
@@ -57,11 +59,11 @@ export default function DestinationPage() {
           <section className="mb-16">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-[11px] uppercase tracking-[0.18em] text-slate-400">главное в направлении</p>
-                <h2 className="mt-2 text-2xl md:text-3xl font-bold text-slate-900">Главные места и впечатления</h2>
+                <p className="text-[11px] uppercase tracking-[0.18em] text-slate-400">destination highlights</p>
+                <h2 className="mt-2 text-2xl md:text-3xl font-bold text-slate-900">Main places and experiences</h2>
               </div>
               <p className="max-w-sm text-xs md:text-sm text-slate-500">
-                Ключевые точки маршрута, с которых лучше всего начать знакомство с регионом.
+                Key points on the route that are the best starting places to get to know the region.
               </p>
             </div>
 
@@ -91,13 +93,13 @@ export default function DestinationPage() {
           </section>
 
           <section>
-            <InfoSection title="Практическая информация" items={dest.practical} icon="📋" />
+            <InfoSection title="Practical information" items={dest.practical} icon="📋" />
           </section>
 
           <section>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-lg">💡</span>
-              <h2 className="text-2xl font-semibold text-slate-900">Советы путешественникам</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Tips for travellers</h2>
             </div>
             <Card className="border border-slate-200 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-sm">
               <ul className="space-y-4">
@@ -115,9 +117,9 @@ export default function DestinationPage() {
 
           <section>
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
-              <h2 className="text-2xl font-semibold text-slate-900">Другие направления по России</h2>
+              <h2 className="text-2xl font-semibold text-slate-900">Other destinations in Russia</h2>
               <p className="text-xs sm:text-sm text-slate-500 max-w-sm">
-                Если хотите расширить маршрут — присмотрите ещё пару регионов рядом.
+                If you want to extend your trip, consider adding a couple of nearby regions.
               </p>
             </div>
 
@@ -145,7 +147,7 @@ export default function DestinationPage() {
                         </div>
                       </div>
                       <div className="p-4 border-t border-slate-100">
-                        <p className="text-xs text-slate-500">Подробнее о регионе →</p>
+                        <p className="text-xs text-slate-500">More about the region →</p>
                       </div>
                     </Card>
                   </Link>

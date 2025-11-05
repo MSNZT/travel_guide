@@ -16,18 +16,11 @@ export const destinations: Record<string, any> = {
         category: "Must-See",
       },
       {
-        title: "Hermitage Museum",
+        title: "Tretyakov Gallery Museum",
         description:
           "One of the world's largest art museums with an extraordinary collection spanning from ancient Egypt to the 20th century.",
         image: "/kremlin-palace-interior-moscow.jpg",
         category: "Museum",
-      },
-      {
-        title: "Moscow Metro",
-        description:
-          'Often called "people\'s palaces," these stunning subway stations feature ornate mosaics, chandeliers, and frescoes.',
-        image: "/moscow-metro-station-art.jpg",
-        category: "Architecture",
       },
       {
         title: "Moscow Metro",
@@ -54,7 +47,7 @@ export const destinations: Record<string, any> = {
       "Respect Orthodox church etiquette",
     ],
   },
-  "saint-petersburg": {
+  spb: {
     name: "Saint Petersburg",
     tagline: "The Venice of the North",
     description:
@@ -107,30 +100,31 @@ export const destinations: Record<string, any> = {
     tagline: "The Sacred Sea",
     description:
       "Lake Baikal is the world's oldest and deepest freshwater lake, containing 23% of Earth's fresh surface water. Surrounded by pristine taiga forests and dramatic mountain ranges, this natural wonder is a UNESCO World Heritage site. The crystalline waters, unique endemic species, and remote wilderness make it one of Russia's most spectacular destinations for nature lovers and adventure seekers.",
-    image: "/placeholder.svg?height=400&width=1200",
+    image: "/lake-baikal-siberia-mountains.jpg",
     bestTime: "June-September (July-August best)",
-    difficulty: "Moderate",
+    difficulty: "Medium",
     highlights: [
       {
-        title: "Baikal Ice Formations",
+        title: "Lake Baikal Ice Formations",
         description:
           "In winter, the lake freezes to spectacular clarity, creating otherworldly landscapes perfect for ice hiking and photography.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/lake-baikal-siberia-mountains.jpg",
         category: "Nature",
-      },
-      {
-        title: "Irkutsk Historic Quarter",
-        description:
-          "Charming wooden architecture and museums providing gateway access to Baikal with cultural insights into Siberian history.",
-        image: "/placeholder.svg?height=300&width=400",
-        category: "Town",
+        featured: true,
       },
       {
         title: "Listvyanka Village",
         description:
           "Picturesque lakeside village offering hiking trails, local restaurants, and stunning views of Baikal's western shore.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/listvynka-village.png",
         category: "Village",
+      },
+      {
+        title: "Olkhon Island",
+        description:
+          "The largest island in Baikal featuring shamanic rock formations, remote wilderness, and authentic Baikal culture.",
+        image: "/olkhon-island.png",
+        category: "Island",
       },
     ],
     practical: [
@@ -155,29 +149,29 @@ export const destinations: Record<string, any> = {
     tagline: "Untamed Wilderness",
     description:
       "The Altai Mountains represent some of Russia's most pristine and dramatic landscapes. This remote region is characterized by towering peaks, cascading waterfalls, crystal-clear alpine lakes, and vast forests teeming with wildlife. UNESCO World Heritage site designation reflects the area's exceptional biodiversity and geological significance. It's a paradise for trekking, mountaineering, and experiencing authentic wilderness.",
-    image: "/placeholder.svg?height=400&width=1200",
+    image: "/altai-mountains-hiking-wilderness.jpg",
     bestTime: "July-September",
-    difficulty: "Challenging",
+    difficulty: "Hard",
     highlights: [
       {
         title: "Mount Belukha Trekking",
         description:
           "A challenging multi-day trek to Russia's highest peak in Siberia at 4,506m, offering breathtaking alpine scenery.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/altai-mountains-hiking-wilderness.jpg",
         category: "Trekking",
       },
       {
         title: "Geizerny Lake",
         description:
           "A stunning alpine lake surrounded by peaks, featuring unique geothermal springs and pristine wilderness.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/geizer-lake.png",
         category: "Lake",
       },
       {
         title: "Karakol Valley",
         description:
           "A scenic valley with three serene glacier-fed lakes, perfect for day hikes and photography of dramatic peaks.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/russia-landscapes-mountains-forests-nature.jpg",
         category: "Valley",
       },
     ],
@@ -203,29 +197,29 @@ export const destinations: Record<string, any> = {
     tagline: "Land of Mountains",
     description:
       "The Caucasus Mountains are the highest mountain range in Europe, with Mount Elbrus at 5,642m towering above the landscape. This diverse region combines alpine beauty with rich cultural heritage, featuring snow-capped peaks, pristine valleys, and vibrant ethnic communities. The region offers world-class mountaineering, skiing, and trekking opportunities while maintaining unique traditions and authentic mountain culture.",
-    image: "/placeholder.svg?height=400&width=1200",
+    image: "/caucasus-mountains-elbrus-peaks.jpg",
     bestTime: "June-September",
-    difficulty: "Challenging",
+    difficulty: "Hard",
     highlights: [
       {
         title: "Mount Elbrus",
         description:
           "Europe's highest peak at 5,642m, offering mountaineering expeditions and Europe's best skiing with stunning panoramic views.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/caucasus-mountains-elbrus-peaks.jpg",
         category: "Peak",
       },
       {
         title: "Dombay Ski Resort",
         description:
           "World-class skiing destination with modern facilities, diverse runs, and access to pristine alpine terrain.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/dombai-ski-resort.png",
         category: "Skiing",
       },
       {
         title: "Arkhyz Region",
         description:
           "Picturesque mountain valleys with traditional villages, hiking trails, and authentic Caucasian hospitality and cuisine.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/arkhyz-village.png",
         category: "Region",
       },
     ],
@@ -251,7 +245,7 @@ export const destinations: Record<string, any> = {
     tagline: "Timeless Traditions",
     description:
       "The Golden Ring is a traditional cluster of ancient Russian towns northeast of Moscow, each preserving centuries of Orthodox heritage and traditional craftsmanship. These charming settlements are characterized by white-washed churches with distinctive golden onion domes, peaceful monasteries, and authentic Russian folk traditions. The region offers intimate glimpses into traditional Russian life, ancient architecture, and vibrant local crafts.",
-    image: "/placeholder.svg?height=400&width=1200",
+    image: "/golden-ring-russia-historic-churches.jpg",
     bestTime: "May-September",
     difficulty: "Easy",
     highlights: [
@@ -259,21 +253,21 @@ export const destinations: Record<string, any> = {
         title: "Rostov the Great",
         description:
           "An ancient town featuring the magnificent Rostov Kremlin with white walls and stunning churches overlooking Nero Lake.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/rostov-kremlin-ancient.png",
         category: "Town",
       },
       {
         title: "Suzdal Village Museums",
         description:
           "An open-air museum with traditional wooden architecture, local crafts, and authentic Russian village atmosphere.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/suzdal-traditional-russian-wooden-architecture-vil.jpg",
         category: "Museum",
       },
       {
         title: "Sergiev Posad Monastery",
         description:
           "One of Russia's holiest pilgrimage sites featuring stunning architecture and active monastic traditions dating to the 14th century.",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/sergiev-posad-monastyr.png",
         category: "Monastery",
       },
     ],

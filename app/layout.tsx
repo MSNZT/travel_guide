@@ -25,8 +25,8 @@ export default function RootLayout({
         {children}
         <footer className="bg-white py-8 border-t">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>© Russia Uncovered. Вся информация на сайте защищена авторскими правами.</p>
-            <p>Некоммерческий проект для путешественников</p>
+            <p>© Russia Uncovered. All information on this website is protected by copyright.</p>
+            <p>Non-profit project for travelers</p>
           </div>
         </footer>
       </body>
