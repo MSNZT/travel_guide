@@ -42,7 +42,7 @@ export function DestinationHeader({
                   •
                 </span>
                 <div className="flex flex-col leading-tight">
-                  <span className="text-[10px] uppercase tracking-[0.16em] text-slate-400">лучшее время</span>
+                  <span className="text-[10px] uppercase tracking-[0.16em] text-slate-400">best time</span>
                   <span className="font-medium text-slate-800">{bestTime}</span>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export function DestinationHeader({
                   ↗
                 </span>
                 <div className="flex flex-col leading-tight">
-                  <span className="text-[10px] uppercase tracking-[0.16em] text-slate-400">сложность</span>
+                  <span className="text-[10px] uppercase tracking-[0.16em] text-slate-400">difficulty</span>
                   <span className="font-medium text-slate-800">{difficulty}</span>
                 </div>
               </div>
